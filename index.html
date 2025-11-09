@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   
+    <style>
+    
+        
+         .hero-bg {
+            background-image:url(banner.png.webp) ;
+            background-size: cover;
+            background-position: center;
+            min-height: 70vh;
+            /* margin: 0 0 15px 15px; */
+
+
+        } 
+        .menu-icon {
+            display: block; /* Hamburger icon is visible */
+        }
+        .close-icon {
+            display: none; /* Close icon is hidden initially */
+        }
+        /* When the menu is open, show close icon and hide hamburger */
+        .menu-open .menu-icon {
+            display: none;
+        }
+        .menu-open .close-icon {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 bg-white font-normal ">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+     <div class="hidden md:flex justify-between items-center py-2 px-6 lg:px-20 bg-gray-100 text-sm text-gray-500">
+       <div>
+                <span class="mr-4">✉️ [email&#160;protected]</span>
+                <span>📞 0339 4022496</span>
+            </div>
+            <div>
+                <a href="https://facebook.com" class="ml-3 hover:text-blue-500">F</a>
+                <a href="https://twitter.com" class="ml-3 hover:text-blue-500">T</a>
+                <a href="https://instagram.com" class="ml-3 hover:text-blue-500">I</a>
+            </div>
+     </div>
+     <nav class="flex justify-between items-center py-4 px-6 lg:px-20">
+        <img src="logo.png.webp" alt="">
+        
+        <ul class="hidden lg:flex space-x-8 text-gray-600 font-medium">
+            <li><a href="#" class="hover:text-blue-950 transition duration-300 text-gray-500">Home</a></li>
+            <li><a href="#" class="hover:text-blue-950 transition duration-300 text-gray-500">Department</a></li>
+            <li><a href="#" class="hover:text-blue-950 transition duration-300 text-gray-500">blog</a></li>
+            <li><a href="#" class="hover:text-blue-950 transition duration-300 text-gray-500">pages</a></li>
+            <li><a href="#" class="hover:text-blue-950 transition duration-300 text-gray-500">Doctors</a></li>
+            <li><a href="#" class="hover:text-blue-950 transition text-gray-500 duration-300">Contact</a></li>
+
+            
+
+        </ul>
+       <a href="#" class="hidden md:block bg-blue-500 text-white py-2 px-4 lg:py-3 lg:px-6 rounded hover:bg-transparent hover:text-blue-500 hover:border-2 hover:border-blue-400 transition duration-300 font-medium whitespace-nowrap text-sm lg:text-base">
+                Make an Appointment
+            </a>
+
+            <button id="menu-button" class="lg:hidden text-2xl text-blue-500 p-2 focus:outline-none">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon">✕</span>
+            </button>
+        </nav>
+        
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 py-4 px-6 bg-gray-50 absolute w-full shadow-lg lg:hidden text-gray-700 font-medium transition-all duration-300 ease-in-out">
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Home</a></li>
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Department</a></li>
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Blog</a></li>
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Pages</a></li>
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Doctors</a></li>
+            <li><a href="#" class="block p-2 hover:bg-blue-700 rounded transition duration-300">Contact</a></li>
+             <li><a href="#" class="block mt-4 bg-blue-500 text-white text-center py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Make an Appointment</a></li>
+        </ul>
+     </nav>
+    </header>
+      <div class="hero-bg relative">
+        <div class="absolute inset-0  bg-opacity-30"> </div>
+        <div class="container mx-auto px-6 lg:px-20 relative pt-32 pb-64 text-white ">
+          <h1 class="text-5xl md:text-6xl font-sa leading-tight mb-4 max-w-2xl text-black">
+                Health care <br> For Whole Family
+                  
+            </h1>
+            
+                 
+            <p class="text-xl max-w-md mb-8 text-blue-500">
+                In healthcare sector, service excellence is the facility of the hospital as a healthcare service provider to consistently.
+            </p>
+            <a href="#" class="bg-blue-500 text-white py-4 px-10 rounded   hover:bg-transparent hover:text-blue-500 hover:border-4 hover:border-blue-500 transition duration-300 font-medium shadow-lg">
+                Check Our Services
+            </a>
+        </div>
+
+      </div>
+         <section >
+      <div class="container  mx-auto px-6 lg:px-20 -mt-28 relative z-10 bg-blue-300 ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-0 p-6  ">
+            <div class="bg-blue-300 p-8   transition duration-300 rounded-lg   text-center  ">
+                <div class="text-4xl text-blue-300 mb-4">🏨</div>
+                <h3 class="text-2xl text-white mb-4">Hospitality</h3>
+                <p class="text-white mb-4">Clinical excellence must be the priority for any health care service provider.</p>
+                <a href="#" class= "text-white font-semibold border-2 py-2 px-6 border-r-4  rounded  border-white hover:bg-white hover:text-blue-500 transition duration-300">Apply For a Bed →</a>
+            </div>
+            <div class="bg-blue-400 p-8 text-white   transition duration-300   rounded-lg text-center">
+                <div class="text-4xl mb-4">🚨</div>
+                <h3 class="text-xl text-white font-bold mb-3">Emergency Care</h3>
+                <p class="mb-4">Clinical excellence must be the priority for any health care service provider.</p>
+                <a href="#" class="font-semibold border-2 py-2 px-6 border-r-4 rounded   border-white hover:bg-white hover:text-blue-500  transition duration-300">0339 4022496</a>
+            </div>
+    
+<div class="bg-blue-300 p-8  transition duration-300 rounded-lg text-center ">
+                <div class="text-4xl text-blue-400 mb-4">🗓️</div>
+                <h3 class="text-xl font-bold mb-3">Chamber Service</h3>
+                <p class="text-gray-600 mb-4">Clinical excellence must be the priority for any health care service provider.</p>
+                <a href="#" class="text-white  font-semibold  border-2 py-2 px-6 border-r-4  rounded border-white hover:bg-white hover:text-blue-500 transition duration-300">Make an Appointment →</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="dental.jpg" alt="Medical Image 1" class="rounded-lg shadow-xl w-3/4 h-auto object-cover">
+                    <img src="calming.webp" alt="Medical Image 2" class="absolute bottom-0 right-0 w-1/2 h-auto rounded-lg shadow-xl transform translate-x-4 translate-y-4 border-4 border-white">
+                </div>
+                
+                <div>
+                    <span class="text-blue-500 font-semibold uppercase tracking-wider">Welcome to Docmed</span>
+                    <h2 class="text-4xl font-bold mt-2 mb-6 text-gray-800">Best Care For Your Good Health</h2>
+                    <p class="mb-6 text-lg text-gray-600">Esteem spirit temper too say adieus who direct esteem. It esteems luckily or picture placing drawing. Apartments frequently or motionless on reasonable projecting expression.</p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-300 mr-3 text-xl">✅</span> Apartments frequently or motionless.
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-300 mr-3 text-xl">✅</span> Duis aute irure dolor in reprehenderit in voluptate.
+                        </li>
+                        <li class="flex items-start text-gray-700">
+                            <span class="text-green-300 mr-3 text-xl">✅</span> Voluptatem quia voluptas sit aspernatur.
+                        </li>
+                    </ul>
+
+                    <a href="#" class="bg-white text-blue-300 py-3 px-8 rounded border-r-2 border-l-2 border-b-2 border-t-2 hover:bg-blue-300 hover:text-white transition duration-300 font-medium sm:hover:bg-blue-300">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+       <section class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <span class="text-blue-400 font-semibold uppercase tracking-wider">Our Departments</span>
+            <h2 class="text-4xl font-bold mt-2 mb-16 text-gray-800">Esteem spirit temper too say adieus who direct esteem.</h2>
+ <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="eye care.jpg" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Eye Care</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300 font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+                </div>
+
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="physical.avif" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Physical Therapy</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300  font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="dental.jpg" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Dental Care</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300 font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="diagonistic.webp" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Diagnostic Test</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300 font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="skin.jfif" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Skin Surgery</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300 font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+                </div>
+                
+                <div class="group bg-white p-8 rounded-lg shadow-md hover:shadow-xl text-center overflow-hidden">
+                    <div class="transition duration-300 transform group-hover:scale-105">
+                        <img src="surgery service.webp" alt="Icon" class="mx-auto mb-4  border-6 border-gray-100 w-50 h-50">
+                        <h3 class="text-xl font-bold mb-2 text-black text-left">Surgery Service</h3>
+                        <p class="text-gray-400 mb-4 text-left">Esteem spirit temper too say adieus who direct esteem.</p>
+                        <a href="#" class="text-blue-300 font-semibold hover:border-b-2 transition duration-300">Learn More </a>
+                    </div>
+           
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-gray-100">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">Expert Doctors</h2>
+                
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="ma.webp" alt="Mirazul Alom" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold mb-1 text-gray-800">mirazul alom</h4>
+                        <p class="text-blue-400 text-sm">Neurologist</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="ha.jpeg" alt="Hussain Ahmad" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold mb-1 text-gray-800">Hussain ahmed</h4>
+                        <p class="text-blue-400 text-sm">Dermatologist</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="sk.avif" alt="Sara Khan" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold mb-1 text-gray-800">Sara Khan</h4>
+                        <p class="text-blue-400 text-sm">Cardiologist</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden group">
+                    <div class="w-full h-80 overflow-hidden">
+                        <img src="js.avif" alt="John Smith" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h4 class="text-xl font-bold mb-1 text-gray-800">John Smith</h4>
+                        <p class="text-blue-500 text-sm">Oncologist</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black pt-20 pb-8 border-t border-gray-100 ">
+        <div class="container mx-auto px-6 lg:px-20 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="text-2xl text-white font-bold  mb-4"><img  src="footer_logo.png.webp" alt=""></div>
+                    <p class="text-gray-600 mb-6 text-sm">Firmament morning sixth subdue darkness creeping gathered divide.</p>
+                   <div class="flex space-x-4 bg-gray-900 p-4">
+    <a href="https://facebook.com" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 hover:bg-gray-500 transition-colors duration-300">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.79c0-2.508 1.493-3.89 3.776-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h3.097l-.493 3.01h-2.604v6.987C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+        </svg>
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 hover:bg-gray-500 transition-colors duration-300">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.19 5.093c-.76.338-1.57.564-2.42.668.875-.523 1.548-1.352 1.865-2.34-.814.484-1.714.836-2.67.102-1.921-.194-3.483-2.022-3.483-4.04v-.12c0-.317.037-.626.11-.926C11.666 4.62 6.78 2.016 3.425 2.016c-3.21 0-6.103 1.63-7.904 4.098.665.105 1.348.16 2.03.16.89 0 1.74-.117 2.53-.33-1.01.208-1.87.685-2.64 1.428-.48.47-.84.99-.84 1.62-.007.697.355 1.295.96 1.708.286.19.59.34.908.45-.66-.185-1.28-.42-1.86-.71.002.007.002.013.002.02v.01c0 2.14 1.52 3.93 3.52 4.34-.33.09-.67.14-1.02.14-.24 0-.47-.02-.69-.07.56 1.74 2.17 3.01 4.08 3.05-.12.02-.23.03-.35.03-.23 0-.46-.01-.68-.04 2.08 1.34 4.68 2.13 7.42 2.13 8.89 0 13.78-7.83 13.78-14.66 0-.22-.005-.43-.01-.65.95-.7 1.78-1.56 2.44-2.55z" />
+        </svg>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 hover:bg-gray-500 transition-colors duration-300">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12 2c2.716 0 3.056.011 4.12.06c1.064.05 1.79.24 2.427.487s1.178.673 1.624 1.12c.447.447.85 1.05.748 1.624s.437 1.363.488 2.427c.049 1.064.06 1.398.06 4.12s-.011 3.056-.06 4.12c-.05 1.064-.24 1.79-.487 2.427s-.673 1.178-1.12 1.624c-.447.447-1.05.85-1.624.748s-1.363.437-2.427.488c-1.064.049-1.398.06-4.12.06s-3.056-.011-4.12-.06c-1.064-.05-1.79-.24-2.427-.487s-1.178-.673-1.624-1.12c-.447-.447-.85-1.05-.748-1.624s-.437-1.363-.488-2.427c-.049-1.064-.06-1.398-.06-4.12s.011-3.056.06-4.12c.05-1.064.24-1.79.487-2.427s.673-1.178 1.12-1.624c.447-.447 1.05-.85 1.624-.748s1.363-.437 2.427-.488c1.064-.049 1.398-.06 4.12-.06ZM12 4c-2.607 0-2.946.01-3.96.058-1.014.048-1.67.22-2.164.407-.494.187-.857.433-1.166.742s-.555.672-.742 1.166c-.187.494-.359 1.15-.407 2.164C4.01 9.054 4 9.393 4 12s.01 2.946.058 3.96c.048 1.014.22 1.67.407 2.164.187.494.433.857.742 1.166s.672.555 1.166.742c.494.187 1.15.359 2.164.407C9.054 19.99 9.393 20 12 20s2.946-.01 3.96-.058c1.014-.048 1.67-.22 2.164-.407.494-.187.857-.433 1.166-.742s.555-.672.742-1.166c.187-.494.359-1.15.407-2.164.048-1.014.058-1.353.058-3.96s-.01-2.946-.058-3.96c-.048-1.014-.22-1.67-.407-2.164-.187-.494-.433-.857-.742-1.166s-.672-.555-1.166-.742c-.494-.187-1.15-.359-2.164-.407C14.946 4.01 14.607 4 12 4Zm0 3.5c2.485 0 4.5 2.015 4.5 4.5s-2.015 4.5-4.5 4.5-4.5-2.015-4.5-4.5 2.015-4.5 4.5-4.5Zm0 2c-1.381 0-2.5 1.119-2.5 2.5s1.119 2.5 2.5 2.5 2.5-1.119 2.5-2.5-1.119-2.5-2.5-2.5Zm6.5-4.5a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0Z" clip-rule="evenodd" />
+        </svg>
+    </a>
+</div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Departments</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><a href="#" class="hover:text-blue-700">Eye Care</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Skin Care</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Pathology</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Medicine</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Dental</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Useful Links</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li><a href="#" class="hover:text-blue-700">About</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Blog</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Contact</a></li>
+                        <li><a href="#" class="hover:text-blue-700">Appointment</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h4 class="text-xl font-bold mb-6 text-white">Address</h4>
+                    <address class="text-gray-600 text-sm not-italic space-y-3">
+                        <p>200, D-block, Green lane USA</p>
+                        <p>+10 367 467 8934</p>
+                        <p><a href="mailto:contact@docmed.com" class="hover:text-blue-600">[email&#160;protected]</a></p>
+                    </address>
+                </div>
+            </div>
+        
+    
+                  <!-- <div class="flex space-x-4 bg-gray-900 p-4">
+ <a href="https://facebook.com" target="_blank" class="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 hover:bg-gray-500 transition-colors duration-300 shadow-lg">
+<img src="fb loggo.avif" alt="">
+</a>
+
+
+<a href="https://twitter.com" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-lg bg-gray-600 hover:bg-gray-500 transition-colors duration-300">
+    <img src="twitter loggio.png" alt="">
+    </a>
+    <a href="https://instagram.com" target="_blank" class=" flex items-center justify-center w-12 h-12 rounded-lg bg-gray-900 hover:bg-gray-500 transition-colors duration-300">
+       <img src="insta loggo.avif" alt="">
+    </a> -->
+                
+                  <!-- <img class="pt-2" src="logo.png.webp" alt=""> -->
+
+            <div class="text-center pt-8 border-t border-gray-100 text-gray-500 text-sm">
+                Copyright © All rights reserved 
+            </div>
+        </div>
+    </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuButton.onclick = function() {
+                // Toggle the 'hidden' class to show/hide the menu
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.remove('hidden');
+                    // Add class to change the icon (Hamburger to Close)
+                    menuButton.classList.add('menu-open');
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    // Remove class to change the icon (Close to Hamburger)
+                    menuButton.classList.remove('menu-open');
+                }
+            };
+        });
+    </script>
+       </body>
+
+</html>
